@@ -14,7 +14,8 @@
     "watch": "webpack --watch --env.tnsAction run",
     "watch:android": "npm run watch -- --env.android",
     "watch:ios": "npm run watch -- --env.ios",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "e2e": "mocha --opts ./e2e/config/mocha.opts"
   },
   "dependencies": {
     "nativescript-theme-core": "^1.0.4",
@@ -22,6 +23,9 @@
     "tns-core-modules": "~3.4.1"
   },
   "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.5",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -30,6 +34,10 @@
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
     "fs-extra": "^5.0.0",
+    "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.17.0",
+    "mocha-multi": "^1.0.1",
+    "nativescript-dev-appium": "^3.3.0",
     "nativescript-vue-externals": "^0.2.0",
     "nativescript-vue-loader": "^0.1.5",
     "nativescript-vue-target": "^0.1.0",

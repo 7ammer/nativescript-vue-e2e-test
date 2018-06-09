@@ -1,0 +1,11 @@
+{
+    "sim.iPhone6": {
+        "platformName": "iOS",
+        "platformVersion": "11.3",
+        "deviceName": "iPhone 6",
+        "fullReset": true,
+        "bundleId": "org.nativescript.application",
+        "app": ""
+    }
+
+}
